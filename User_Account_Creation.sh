@@ -22,7 +22,7 @@ read -p 'Enter the name of the person or application that will be using this acc
 read -p 'Enter the password to use for the account: ' PASSWORD
 
 # Create the account.
-useradd -c "${COMMENT}" -m ${USER_NAME} -p ${PASSWORD}
+useradd -c "${COMMENT}" -m ${USER_NAME} -p ${PASSWORD} -m
 
 # Check to see if the useradd command succeeded.
 # We don't want to tell the user that an account was created when it hasn't been.
